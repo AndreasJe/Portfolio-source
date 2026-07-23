@@ -1,0 +1,635 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#screen {
+  width: 100vw;
+  height: 56.25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/*GAME-----------------------------------------------------*/
+#game {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: red;
+}
+
+/*------GAME BACKGROUND*/
+#game_background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(assets/skaerme/Baggrund.svg);
+  background-size: cover;
+  z-index: 0;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+#game_middleground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(assets/skaerme/Mellemgrund.svg);
+  background-size: cover;
+  z-index: 1;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+/*------GAME ELEMENTS*/
+#game_elements {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*------Anton uden gaver -------------- h500px w320px------------------*/
+#anton_container1 {
+  position: absolute;
+}
+
+#anton_sprite1 {
+  background-image: url(assets/figurer/anton_u_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+#anton_container2 {
+  position: absolute;
+}
+
+#anton_sprite2 {
+  background-image: url(assets/figurer/anton_u_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+#anton_container3 {
+  position: absolute;
+}
+
+#anton_sprite3 {
+  background-image: url(assets/figurer/anton_u_gave2.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+#anton_container4 {
+  position: absolute;
+}
+
+#anton_sprite4 {
+  background-image: url(assets/figurer/anton_u_gaver3.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+/*------Anton med gaver -------------- h500px w320px------------------*/
+#anton_gave_container1 {
+  position: absolute;
+  height: 20vw;
+  width: 10vw;
+}
+
+#anton_gave_sprite1 {
+  background-image: url(assets/figurer/anton_m_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  bottom: 0vw;
+  right: 0vw;
+  cursor: pointer;
+}
+
+#anton_gave_container2 {
+  position: absolute;
+  height: 20vw;
+  width: 10vw;
+}
+
+#anton_gave_sprite2 {
+  background-image: url(assets/figurer/anton_m_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+#anton_gave_container3 {
+  position: absolute;
+  height: 20vw;
+  width: 10vw;
+}
+
+#anton_gave_sprite3 {
+  background-image: url(assets/figurer/anton_m_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+#anton_gave_container4 {
+  position: absolute;
+  height: 20vw;
+  width: 10vw;
+}
+
+#anton_gave_sprite4 {
+  background-image: url(assets/figurer/anton_m_gave.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 6.4vw;
+  cursor: pointer;
+}
+
+/*------GAME UI*/
+#game_ui {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(assets/skaerme/Bund.svg);
+  background-size: 100%;
+  z-index: 3;
+  user-select: none;
+  pointer-events: none;
+}
+
+/*------UI ELEMENTER*/
+#energy_board {
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+  height: 10.5vw;
+  width: 10.5vw;
+  background-image: url(assets/komponenter/Hjerte.svg);
+  background-size: cover;
+}
+
+#heart {
+  position: absolute;
+  bottom: 0vw;
+  left: 0vw;
+  height: 5vw;
+  width: 5vw;
+  user-select: none;
+  pointer-events: none;
+}
+
+#liv {
+  position: absolute;
+  bottom: 1vw;
+  left: 4.5vw;
+  user-select: none;
+  pointer-events: none;
+  font-size: 300%;
+}
+
+#myPoint {
+  position: absolute;
+  bottom: 0vw;
+  left: 3.2vw;
+  user-select: none;
+  pointer-events: none;
+  font-size: 300%;
+}
+
+#time_board {
+  position: absolute;
+  bottom: 0vw;
+  left: 0vw;
+  z-index: 4;
+  height: 10.5vw;
+  width: 10.5vw;
+}
+
+#ur {
+  position: relative;
+  bottom: 0vw;
+  left: 0vw;
+  height: 10.5vw;
+  width: 10.5vw;
+}
+
+#ur_sprite {
+  position: absolute;
+  background-image: url(assets/komponenter/Ur.svg);
+  background-size: cover;
+  height: 10vw;
+  width: 10vw;
+}
+
+#viser {
+  position: relative;
+  bottom: 0px;
+  left: 0vw;
+  height: 10vw;
+  width: 10vw;
+}
+
+#viser_sprite {
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  bottom: 0px;
+  left: 0vw;
+  background-image: url(assets/komponenter/Viser.svg);
+  background-size: cover;
+}
+
+#score_board {
+  position: absolute;
+  bottom: 0vw;
+  right: 0vw;
+  height: 10vw;
+  width: 10vw;
+  background-image: url(assets/komponenter/Point.svg);
+  background-size: 100%;
+}
+
+#point {
+  position: absolute;
+  bottom: 0vw;
+  right: 0vw;
+  height: 10vw;
+  width: 10vw;
+  text-align: center;
+  font-size: 200%;
+  font-feature-settings: tnum;
+}
+
+/*ANIMATIONER---------------------------*/
+.drej {
+  animation-name: drej;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(40);
+}
+
+@keyframes drej {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.grow {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: translateX(-0.5vw) scale(1.1);
+  }
+}
+
+.vindue {
+  animation-name: vindue;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes vindue {
+  0% {
+    transform: translateX(-15vw);
+  }
+
+  25% {
+    transform: translateX(-12vw);
+  }
+
+  90% {
+    transform: translateX(-2vw);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-2.5vw);
+    opacity: 0;
+  }
+}
+
+.vindue2 {
+  animation-name: vindue2;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes vindue2 {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  25% {
+    transform: translateX(2vw) translateY(-0.5vw);
+  }
+
+  80% {
+    transform: translateX(4vw) translateY(-1vw);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(4.5vw) translateY(-0.5vw);
+    opacity: 0;
+  }
+}
+
+.popop {
+  animation-name: popop;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes popop {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.puls {
+  animation-name: puls;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 0.1s;
+  animation-iteration-count: 20;
+  animation-fill-mode: both;
+  animation-delay: 20000;
+  animation-timing-function: linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0.2vw);
+  }
+
+  50% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(0.2vw);
+  }
+}
+
+.dissappear {
+  animation-name: dissappear_kf;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+  animation-fill-mode: forwards;
+}
+
+@keyframes dissappear_kf {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+/* // --------------------FONT--------------------  */
+@font-face {
+  font-family: "CourierNewPSMT";
+  src: url("./fonts/cour.woff") format("woff"),
+    /* Modern Browsers */
+    url("./fonts/cour.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+    font-family: "CourierNewPSMT";
+    color: #4c6483;
+    text-align: center;
+
+}
+
+
+/* // --------------------POSITIONER--------------------  */
+.position1 {
+  top: 0vw;
+  left: 1vw;
+}
+
+.position2 {
+  top: 18vw;
+  left: 5vw;
+}
+
+.position3 {
+  top: 20vw;
+  right: 20vw;
+}
+
+.position4 {
+  bottom: 17.3vw;
+  left: 5vw;
+}
+
+.position5 {
+  left: 0vw;
+  top: 0vw;
+}
+
+.position6 {
+  bottom: 7.0vw;
+  right: 5vw;
+}
+
+.position7 {
+  top: 30vw;
+  right: 20vw;
+}
+
+.position8 {
+  top: 20vw;
+  right: 10vw;
+}
+
+.position9 {
+  top: 30vw;
+  left: 30vw;
+}
+
+.hide {
+  display: none;
+  pointer-events: none;
+}
+
+.show {
+  display: block;
+  pointer-events: auto;
+}
+
+.blur {
+  filter: blur(3px) brightness(100%);
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+/*START----------------------------------------------------*/
+#start {
+  background-image: url(assets/skaerme/titel_u_knapper.svg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: 4;
+}
+
+/*GAME OVER------------------------------------------------*/
+#gameOver {
+  background-image: url(assets/skaerme/taberskaerm.svg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+/*LEVEL COMPLETE-------------------------------------------*/
+#levelComplete {
+  background-image: url(assets/skaerme/vinderskaerm.svg);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+/*KNAPPER----------------------------------------------------*/
+#play {
+  background-image: url(assets/ui/Play_button.svg);
+  background-size: cover;
+  width: 20vw;
+  height: 10vw;
+  bottom: 6vw;
+  left: 40vw;
+  z-index: 4;
+  position: absolute;
+  cursor: pointer;
+}
+
+#replay_btn {
+  background-image: url(assets/ui/Replay_button.svg);
+  background-size: cover;
+  width: 10vw;
+  height: 7.5vw;
+  top: 0vw;
+  right: 5vw;
+  z-index: 4;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* //ekstra hides - RESTER fra et forsøg på random at vise nyAnton----------------------------// */
+hide1 {
+  display: none;
+  pointer-events: none;
+}
+
+hide2 {
+  display: none;
+  pointer-events: none;
+}
+
+hide3 {
+  display: none;
+  pointer-events: none;
+}
+
+hide4 {
+  display: none;
+  pointer-events: none;
+}
+
+hide5 {
+  display: none;
+  pointer-events: none;
+}
+
+hide6 {
+  display: none;
+  pointer-events: none;
+}
+
+hide7 {
+  display: none;
+  pointer-events: none;
+}
+
+hide8 {
+  display: none;
+  pointer-events: none;
+}

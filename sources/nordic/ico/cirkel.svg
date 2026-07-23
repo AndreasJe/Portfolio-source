@@ -1,0 +1,9 @@
+<svg id="star" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="99.2598" height="99.2598" viewBox="0 0 99.2598 99.2598"><defs><style>.cls-1{fill:#4a984d;}</style></defs><circle class="cls-1" cx="49.6299" cy="49.6299" r="49.6299"/></svg>
+
+
+<svg height="100%" width="100%"  style="display: none;">
+  <symbol id="star" viewBox="0 0 99 99">
+  <title>star</title>
+  <style>.cls-1{fill:#F4F5F0;}</style>
+  <circle stroke='#72AE73' stroke-width='1' class="cls-1" cx="49.6299" cy="49.6299" r="49.6299"/>
+</svg>

@@ -1,0 +1,746 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------- FONTS -----------------*/
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-light-webfont.woff2') format('woff2'),
+        url('fonts/roboto-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'vag';
+    src: url('fonts/vag_rounded_light-webfont.woff2') format('woff2'),
+        url('fonts/vag_rounded_light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: "vag-rundschrift-d";
+    src: url("https://use.typekit.net/af/121f08/00000000000000000001793a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/121f08/00000000000000000001793a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/121f08/00000000000000000001793a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style: normal;
+}
+
+h1 {
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-size: 3vw;
+    color: white;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: normal;
+}
+
+p {
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-size: 1vw;
+    color: white;
+    font-weight: lighter;
+}
+
+/*-------------------- Tekst Intro ----------------*/
+#intro_text {
+    width: 43vw;
+    height: 10vw;
+    top: 9vw;
+    left: 12vw;
+    z-index: 1;
+    position: absolute;
+    user-select: none;
+    display: none;
+}
+
+/*-------------------- Tekst GameOver ----------------*/
+#go_txt_h {
+    width: 80vw;
+    height: 12vw;
+    top: 14vw;
+    left: 26vw;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    user-select: none;
+
+}
+
+#go_txt_h2 {
+    width: 60vw;
+    height: 12vw;
+    top: 19vw;
+    left: 30vw;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    user-select: none;
+}
+
+#go_txt_p_left {
+    width: 40vw;
+    height: 5vw;
+    bottom: 2vw;
+    left: 3vw;
+    z-index: 1;
+    position: absolute;
+    user-select: none;
+
+}
+
+#go_txt_p_right {
+    width: 30vw;
+    height: 5vw;
+    bottom: 1vw;
+    right: 3vw;
+    z-index: 1;
+    position: absolute;
+    user-select: none;
+
+}
+
+/*-------------------- Tekst levelComplete ----------------*/
+#lc_txt_h {
+    width: 65vw;
+    height: 10vw;
+    top: -1vw;
+    left: 15vw;
+    z-index: 1;
+    position: absolute;
+    user-select: none;
+
+}
+
+#lc_txt_p {
+    width: 70vw;
+    height: 5vw;
+    bottom: 5vw;
+    left: 15vw;
+    z-index: 1;
+    position: absolute;
+    user-select: none;
+
+}
+
+/*-------------------- SCREEN ----------------*/
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+/*-------------------- GAME ----------------*/
+#game {
+    background-color: #6fd9e2;
+    background-image: url(pics/game_scene.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*-------- GAME BACKGROUND ---------*/
+#game_background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(pics/game_scene.svg);
+    background-size: cover;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+/*-------- GAME FOREGROUND ---------*/
+#game_foreground {
+    height: 61.58vw;
+    width: 48vw;
+    position: absolute;
+    background-image: url(pics/foreground-01.svg);
+    background-size: cover;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+
+    top: 1.4vw;
+    left: 15.6vw;
+
+    z-index: 2;
+
+    display: none;
+}
+
+/*-------- GAME ELEMENTS ---------*/
+#game_elements {
+
+    position: absolute;
+    top: 16vw;
+    left: 41vw;
+
+
+}
+
+/*-------- GAME UI ---------*/
+#game_ui {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    color: #eaa77d;
+}
+
+a {
+    color: #eaa77d;
+}
+
+/* --- SCORE BOARD ----- */
+#score_button {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    height: 10vw;
+    width: 20vw;
+    background-image: url(pics/point_counter.svg);
+    background-size: 100%;
+}
+
+#score_text {
+    position: absolute;
+    bottom: -0.3vw;
+    right: 5vw;
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-weight: lighter;
+    font-size: 10vw;
+    color: white;
+}
+
+/*--- TIME BOARD -----*/
+#time_board {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-weight: 100;
+    font-size: 2.5vw;
+    color: white;
+    user-select: none;
+}
+
+#time_text {
+    font-family: "vag-rundschrift-d", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color: white;
+    user-select: none;
+}
+
+/*-------- INTRODUCTION ---------*/
+#introduction {
+    height: 100%;
+    width: 100%;
+    background-image: url(pics/introduction.svg);
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+/*-------- START ---------*/
+#start {
+    background-image: url(pics/start_skaerm.svg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+/*-------- GAME OVER ---------*/
+#gameover {
+    background-image: url(pics/taber_skaerm.svg);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*-------- LEVEL COMPLETE ---------*/
+#levelcomplete {
+    background-image: url(pics/vinder_skaerm.svg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+/*-------------------- KNAPPER ----------------*/
+#replay_button {
+    background-image: url(pics/replay_button.svg);
+    background-size: 100%;
+    width: 12vw;
+    height: 6vw;
+    top: 2vw;
+    right: 2vw;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+#point_counter {
+    background-image: url(pics/point_counter.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 10vw;
+    bottom: 6vw;
+    left: 40vw;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+#anmeld_button {
+    background-image: url(pics/anmeld_button.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 10vw;
+    bottom: 25vw;
+    right: 12vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+#del_button {
+    background-image: url(pics/del_button.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 10vw;
+    bottom: 25vw;
+    left: 15vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+#start_button {
+    background-image: url(pics/start_button.svg);
+    background-size: cover;
+    width: 20vw;
+    height: 10vw;
+    bottom: 8vw;
+    left: 25vw;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+#agree_button {
+    background-image: url(pics/agree_button.svg);
+    background-size: 100%;
+    width: 30vw;
+    height: 8.3vw;
+    bottom: 10vw;
+    left: 16vw;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+/*-------------------- POLAROID; ANIMAL----------------*/
+
+
+#ani_1 {
+    background-image: url(pics/ani1.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+
+
+}
+
+#ani_2 {
+    background-image: url(pics/ani2.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#ani_3 {
+    background-image: url(pics/ani3.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+
+    display: none;
+}
+
+#ani_4 {
+    background-image: url(pics/ani4.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#ani_5 {
+    background-image: url(pics/ani5.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#ani_6 {
+    background-image: url(pics/ani6.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#ani_7 {
+    background-image: url(pics/ani7.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#ani_8 {
+    background-image: url(pics/ani8.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#ani_9 {
+    background-image: url(pics/ani9.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#ani_10 {
+    background-image: url(pics/ani10.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#ani_11 {
+    background-image: url(pics/ani11.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+/*-------------------- POLAROID: NUDES ----------------*/
+#skin_1 {
+    background-image: url(pics/skin1.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_2 {
+    background-image: url(pics/skin2.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_3 {
+    background-image: url(pics/skin3.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#skin_4 {
+    background-image: url(pics/skin4.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#skin_5 {
+    background-image: url(pics/skin5.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_6 {
+    background-image: url(pics/skin6.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_7 {
+    background-image: url(pics/skin7.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_8 {
+    background-image: url(pics/skin8.svg);
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_9 {
+    background-image: url(pics/skin9.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+#skin_10 {
+    background-image: url(pics/skin10.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#skin_11 {
+    background-image: url(pics/skin11.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+    display: none;
+}
+
+#skin_12 {
+    background-image: url(pics/skin12.svg);
+
+    width: 20vw;
+    height: 19.30vw;
+
+    background-size: 100%;
+
+
+    display: none;
+}
+
+/*-------------------- ANIMATIONS ----------------*/
+.disappear {
+    animation-name: disappear;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.knap {
+    animation-name: knap;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes knap {
+    0% {
+        transform: translateY(0vw);
+    }
+
+    100% {
+        transform: translateY(-4vw);
+    }
+}
+
+
+.scroll_in {
+    animation-name: scroll_in;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes scroll_in {
+    0% {
+        transform: translateY(-25vw);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+}
+
+.scroll_out {
+    animation-name: scroll_out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: reverse;
+}
+
+@keyframes scroll_out {
+    0% {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(30vw);
+        opacity: 0;
+    }
+}

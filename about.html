@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NG1TX9SMR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0NG1TX9SMR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="description"
+        content="Want to know a little more about me, and what i can do. Have a read, and i might be what you're looking for ">
+    <meta name="keywords"
+        content="webdevelopment, hjemmesidedesign, hjemmesider, hosting, udvikling, grafisk design, portfolio, andreas, andreas jensen, udvikler, webdesign, fotograf, CPH, KBH ">
+    <meta name="author" content="Andreas Jensen">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#b19e6b">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Portfolio">
+    <meta name="application-name" content="Portfolio">
+    <meta name="msapplication-TileColor" content="#e8e5db">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<script>
+    window.onload = function() {
+    var birthdate = new Date("1990/11/11");
+    var cur = new Date();
+    var diff = cur-birthdate; 
+    var age = Math.floor(diff/31557600000); 
+    var ageElement = document.getElementById("age");
+    ageElement.innerHTML = age;
+    }
+</script>
+
+<div id="burger-nav">
+    <input type="checkbox" id="menu-toggle" />
+    <label id="trigger" for="menu-toggle"></label>
+    <label id="burger" for="menu-toggle"></label>
+
+    <ul id="menu">
+        <li class="nav-row"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-row"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-row"><a class="nav-link" href="/timeline.html">Timeline</a></li>
+        <li class="nav-row"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+        <li class="nav-row"><a class="nav-link" href="/contact.html">Contact</a></li>
+        <li class="nav-row"><a class="nav-link" href="/pdf/resume-andreas-jensen.pdf">Download Resume</a></li>
+    </ul>
+</div>
+
+<body>
+    <main>
+
+        <section>
+            <h1>About me:</h1>
+            <p>I&#8217;m a <span id="age"></span> years old Dane and currently living in Nørrebro, Copenhagen. Here I&#8217;ve lived with my
+                girlfriend and
+                our two cats for the past two years. I&#8217;m a social person, a movie-lover and able to enjoy all
+                genres of
+                music, even though I have a very specific taste. Recently I graduated as a MultiMedia Designer from KEA,
+                and during that study, I discovered a love for coding and because of that; I started with Web
+                Development shortly after.<br>
+                Now a few months later, I&#8217;ve already gotten confident with PHP and all its features. As a result,
+                I can
+                create a full web-application with an independent MySQL back-end with features like; Two Factor
+                Authentication, Emailing service, Dynamic Product Catalogue, Multi-Lingual support and much
+                more.<br><br>
+
+                Less than two months ago, I would completely depend on WordPress plug-ins for the aforementioned
+                features,
+                now I can write them myself. This ability opens a whole new world of endless methods within coding
+                languages and all the frameworks we have today - not even considered the ones to come in the
+                near-future.<br><br>
+
+                Continue to the next section, where I will describe my experience with the different languages
+            </p>
+        </section>
+
+
+
+        <section>
+            <h2>Front-end:</h2>
+            <p>As I have progressed into Web Development as a core theme in my new education, I have learned to create
+                more
+                than a pretty and functional front-end. Here is a list of the frameworks and coding languages, I have
+                experience with.
+            </p>
+            <p>&#128204; <small> The percentage represents my experience in the named skill </small>
+            </p>
+            <div class="competence-grid">
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-html" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>95<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">HTML5</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-seo" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>90<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">SEO</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-css" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>95<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">CSS3</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-sass" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">SASS</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-js" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Javascript</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-jq" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>40<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">jQuery</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-boot" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>95<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Bootstrap</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-tail" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>75<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Tailwind</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-word" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>95<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">WordPress</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-php" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>70<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">PHP</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-react" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>60<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">React Native</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-django" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Django</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <h2>Back-end:</h2>
+            <p>While i have focused on the front-end, i have not disregarded the back-end work completely. Most of
+                the focus has gone into the understanding the scope of the different database-types, and their different
+                use-cases. The below list will describe the database, that i have worked with hands-on.<br>
+                The mentioning of the Google Sheet describes a specific use-case with a product database stored in a
+                Google Sheet.
+            </p>
+            <p>&#128204; <small> The percentage represents my experience in the named skill </small>
+            </p>
+            <div class="competence-grid">
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-maria" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>80<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">MariaDB<br> (MySQL)</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-mong" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>50<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">MongoDB<br> (NoSQL)</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-post" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>70<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">PostgreSQL<br> (SQL)</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-gogle" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>90<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Google Sheet<br> (TSV)</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-pyth" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>40<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Python</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-firebase" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>60<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Firebase</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-docker" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>80<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Docker</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-wsl" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>80<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">WSL</h2>
+                </div>
+                <div class="competence-box">
+                    <div class="percent">
+                        <svg>
+                            <circle cx="50" cy="50" r="50"></circle>
+                            <circle id="comp-webpack" cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="num">
+                            <h2>40<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Webpack</h2>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <h2>Software:</h2>
+            <p> The following list contains the most essential software, and online marketing tools
+                that i&#8217;m familiar with. </p>
+            <ul class="mainUL">
+                <li>Adobe Creative Suite</li>
+                <ul class="subUL">
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                    <li>Lightroom</li>
+                    <li>Bridge</li>
+                    <li>Audition</li>
+                    <li>Animate</li>
+                    <li>Premiere Pro</li>
+                    <li>After Effects</li>
+                    <li>XD</li>
+                </ul>
+                <li>Google Services</li>
+                <ul class="subUL">
+                    <li>Analytics</li>
+                    <li>AdSense</li>
+                    <li>AdWords</li>
+                    <li>Ads Keyword Planner</li>
+                    <li>Google Search Console</li>
+                </ul>
+                <li>Affinity Creative Software </li>
+                <ul class="subUL">
+                    <li>Designer</li>
+                    <li>Photo</li>
+                </ul>
+                <li>Github</li>
+                <li>Gitlab</li>
+                <li>Docker</li>
+                <li>Figma</li>
+                <li>Facebook & Instagram Business Manager</li>
+
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+
+</html>

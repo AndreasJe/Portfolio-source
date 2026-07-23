@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NG1TX9SMR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0NG1TX9SMR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="Portfolio: Animation ">
+    <meta name="keywords"
+        content="webdevelopment,Web Development , hjemmesidedesign, hjemmesider, hosting, udvikling, grafisk design, portfolio, andreas, andreas jensen, udvikler, webdesign, animation, fotograf, CPH, KBH ">
+    <meta name="author" content="Andreas Jensen">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="../css/burger.css">
+    <link rel="stylesheet" href="../css/keyframes.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#b19e6b">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Portfolio">
+    <meta name="application-name" content="Portfolio">
+    <meta name="msapplication-TileColor" content="#e8e5db">
+    <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+</head>
+
+<div id="burger-nav">
+    <input type="checkbox" id="menu-toggle" />
+    <label id="trigger" for="menu-toggle"></label>
+    <label id="burger" for="menu-toggle"></label>
+
+    <ul id="menu">
+        <li class="nav-row"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-row"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-row"><a class="nav-link" href="/timeline.html">Timeline</a></li>
+        <li class="nav-row"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+        <li class="nav-row"><a class="nav-link" href="/contact.html">Contact</a></li>
+        <li class="nav-row"><a class="nav-link" href="/pdf/resume-andreas-jensen.pdf">Download Resume</a></li>
+    </ul>
+</div>
+
+<body>
+    <main>
+
+        <div id="breadcrumbs"> <a href="../index.html">Home</a>
+            <p class="seperator"> &raquo; </p><a href="../portfolio.html">Portfolio</a>
+            <p class="seperator"> &raquo;</p>
+            <p> Animation</p>
+        </div>
+
+        <section>
+            <div>
+                <h1>Animation:</h1>
+                <p> I have always loved doing flat-design characters in Illustrator, but bringing them alive makes a
+                    enormous difference. Here is some of my animation work from previous assignments. <br><br>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <article id="animation-sec" class="video-container">
+                <h2>Background Graphics: Social Platform </h2>
+                <p>As part of a concept assignment, we had to create a web shop around a social community workshop for
+                    young people. For this I designed animated background art for some categories on the website.
+                    Here we have the three categories; <strong> Movie Nights</strong>, <strong> Camping</strong> and
+                    <strong> Cooking</strong>.<br>
+                    I created the first two with Adobe Premiere Pro, and the last one is my first attempt with Adobe
+                    Animate.
+                </p>
+                <video id="my-video-1" class="video-js" controls preload="metadata"
+                    poster="../projects/foto/video-thumb/movies.png" data-setup="{}">
+                    <source src="../projects/animation/movie-night-once.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://caniuse.com/video" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <video id="my-video-2" class="video-js" controls preload="metadata"
+                    poster="../projects/foto/video-thumb/camping.png" data-setup="{}">
+                    <source src="../projects/animation/samletkortere.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://caniuse.com/video" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <video id="my-video-3" class="video-js" controls preload="metadata"
+                    poster="../projects/foto/video-thumb/cooking.png" data-setup="{}">
+                    <source src="../projects/animation/madlavning-loop.mp4" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://caniuse.com/video" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+            </article>
+
+        </section>
+    </main>
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+</body>
+
+
+</html>

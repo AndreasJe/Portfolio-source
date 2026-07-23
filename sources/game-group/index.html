@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Share?</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Lyde og musik -->
+
+    <audio src="sounds/game_background_music.mp3" id="background_music"></audio>
+    <audio src="sounds/levelcomplete.wav" id="level_complete_sound"></audio>
+    <audio src="sounds/gameover.wav" id="game_over_sound"></audio>
+    <audio src="sounds/Anmeld.m4a" id="click_anmeld_sound"></audio>
+    <audio src="sounds/Del.m4a" id="click_del_sound"></audio>
+
+
+
+    <!--- Selve spillet -->
+
+    <div id="screen">
+
+        <div id="game">
+
+            <div id="game_background"> </div>
+            <div id="game_foreground"> </div>
+
+        </div>
+
+        <div id="game_elements">
+
+            <div id="animal">
+
+                <div id="ani_1"></div>
+                <div id="ani_2"></div>
+                <div id="ani_3"></div>
+                <div id="ani_4"></div>
+                <div id="ani_5"></div>
+                <div id="ani_6"></div>
+                <div id="ani_7"></div>
+                <div id="ani_8"></div>
+                <div id="ani_9"></div>
+                <div id="ani_10"></div>
+                <div id="ani_11"></div>
+
+            </div>
+
+            <div id="nude">
+
+                <div id="skin_1"></div>
+                <div id="skin_2"></div>
+                <div id="skin_3"></div>
+                <div id="skin_4"></div>
+                <div id="skin_5"></div>
+                <div id="skin_6"></div>
+                <div id="skin_7"></div>
+                <div id="skin_8"></div>
+                <div id="skin_9"></div>
+                <div id="skin_10"></div>
+                <div id="skin_11"></div>
+                <div id="skin_12"></div>
+
+
+            </div>
+
+        </div>
+
+
+        <div id="game_ui">
+
+            <div id="button">
+
+                <div id="start_button"></div>
+                <div id="intro_button"></div>
+
+                <div id="anmeld_button"></div>
+                <div id="del_button"></div>
+                <div id="agree_button"></div>
+                <div id="replay_button"></div>
+
+            </div>
+
+            <div id="score_board">
+
+                <div id="score_button"></div>
+
+                <div id="score_text">0</div>
+
+
+            </div>
+
+            <div id="time_board">
+                <div id="time_text">30 sek tilbage</div>
+            </div>
+
+        </div>
+
+        <div id="introduction">
+
+            <div id="intro_text">
+                <h1>Velkommen til spillet!</h1>
+                <p>Du skal nu vælge at dele eller anmelde de billeder du ser.<br>Husk du ikke må dele
+                    nøgenbilleder!<br><br>Er du med på reglerne?</p>
+            </div>
+
+
+        </div>
+
+        <div id="start"></div>
+
+        <div id="levelcomplete">
+            <div id="lc_txt_h">
+                <h1>Det kan vi lide!</h1>
+                <h2>Du har totalt styr på, hvad du må dele på nettet</h2>
+            </div>
+            <div id="lc_txt_p">
+                <p>Hvis du stadig er i tvivl om, hvad der er kategoriseret som nøgenbillede, så tag et kig på <a
+                        href="http://privatsnak.dk">Privatsnak.dk</a> og lær meget mere om deling af billeder.</p>
+            </div>
+        </div>
+
+        <div id="gameover">
+            <div id="go_txt_h">
+                <h1>Åh nej, du har delt et nøgenbillede!</h1>
+            </div>
+            <div id="go_txt_h2">
+                <h2>Har du tænkt over hvilke konsekvenser det kan have?</h2>
+            </div>
+            <div id="go_txt_p_left">
+                <p>Ifølge loven skal man spørge om lov, før man deler et billede af andre, og hvis du er under 18, må du
+                    ikke lægge nøgenbilleder op af dig selv på nettet, da det er børneporno.</p>
+            </div>
+            <div id="go_txt_p_right">
+                <p>Du kan læse meget mere om emnet på <a href="http://privatsnak.dk">Privatsnak.dk</a></p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

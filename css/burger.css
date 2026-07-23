@@ -1,0 +1,125 @@
+@keyframes checked-anim {
+  50% {
+    width: 3000px;
+    height: 3000px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+@keyframes not-checked-anim {
+  0% {
+    width: 3000px;
+    height: 3000px;
+  }
+}
+.nav-link,
+.nav-row {
+  margin: 75px 0 -55px 0;
+  color: #dda977;
+  font-family: var(--font-family-normal);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+  display: none;
+}
+.nav-link {
+  max-width: 280px;
+  text-indent: 56px;
+}
+.nav-row:focus {
+  display: block;
+  color: #cea782;
+  text-decoration: underline;
+  transition: all 0.5s;
+  text-shadow: 0px 0px 5px rgba(153, 84, 30, 0.69);
+}
+
+#trigger,
+#burger,
+#burger:before,
+#burger:after {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: #dda977;
+  width: 30px;
+  height: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  z-index: 99999;
+  position: absolute;
+}
+#trigger {
+  height: 25px;
+  background: none;
+  z-index: 99999999;
+  position: absolute;
+}
+#burger:before {
+  content: " ";
+  top: 10px;
+  left: 0;
+}
+#burger:after {
+  content: " ";
+  top: 20px;
+  left: 0;
+}
+#menu-toggle:checked + #trigger + #burger {
+  top: 35px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+  width: 20px;
+  top: -2px;
+  left: 18px;
+  transform: rotate(45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+  width: 20px;
+  top: 2px;
+  left: 18px;
+  transform: rotate(-45deg) translateX(-5px);
+  transition: transform 0.2s ease;
+}
+#menu {
+  z-index: 9999;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  background-color: #99541e;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  /* 
+  Animation disabled temporarily - Annoying, when navigating quickly.  */
+
+  animation: not-checked-anim 0.1s both;
+  transition: 0.1s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+  animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ #menu > .nav-row,
+.nav-link {
+  display: block !important;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  z-index: 999999999;
+  position: absolute;
+  display: none !important;
+}

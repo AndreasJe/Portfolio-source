@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAME</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex" />
+</head>
+
+<body>
+
+  <div id="screen">
+
+    <div id="game">
+
+      <div id="game_background"> </div>
+      <div id="game_middleground"> </div>
+      <div id="game_elements">
+
+        <div id="anton_container1" class="hide1">
+          <div id="anton_sprite1"> </div>
+        </div>
+        <div id="anton_container2" class="hide2">
+          <div id="anton_sprite2"> </div>
+        </div>
+        <div id="anton_container3" class="hide3">
+          <div id="anton_sprite3"> </div>
+        </div>
+        <div id="anton_container4" class="hide4">
+          <div id="anton_sprite4"> </div>
+        </div>
+        <div id="anton_gave_container1" class="hide5">
+          <div id="anton_gave_sprite1"> </div>
+        </div>
+        <div id="anton_gave_container2" class="hide6">
+          <div id="anton_gave_sprite2"> </div>
+        </div>
+
+        <div id="anton_gave_container3" class="hide7">
+          <div id="anton_gave_sprite3"> </div>
+        </div>
+
+        <div id="anton_gave_container4" class="hide8">
+          <div id="anton_gave_sprite4"> </div>
+        </div>
+      </div>
+
+      <div id=game_ui>
+        <div id="score_board">
+          <div id="myPoint">
+            <p>0</p>
+          </div>
+        </div>
+      </div>
+      <div id="energy_board">
+        <div id="heart">
+          <div id="liv">
+            <p>3</p>
+          </div>
+        </div>
+
+      </div>
+      <div id="time_board" class="">
+        <div id="ur">
+          <div id="ur_sprite"> </div>
+
+        </div>
+        <div id="viser_container">
+          <div id="viser_sprite" class=""> </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="start" class="hide">
+      <div id="play"></div>
+    </div>
+    <div id="gameOver" class="hide">
+      <div id="replay_btn"> </div>
+    </div>
+    <div id="levelComplete" class="hide">
+      <div id="replay_btn"></div>
+    </div>
+
+  </div>
+
+  <div id="sounds">
+    <audio src="assets/sounds/ogg/gameSound.ogg" id="gameSound"></audio>
+    <audio src="assets/sounds/ogg/gameOver_sound.ogg" id="gameOver_sound"></audio>
+    <audio src="assets/sounds/ogg/levelComplete_sound.ogg" id="levelComplete_sound"></audio>
+    <audio src="assets/sounds/ogg/nonGift_sound.ogg" id="nonGift_sound"></audio>
+    <audio src="assets/sounds/ogg/pointClick_sound.ogg" id="pointClick_sound"></audio>
+    <audio src="assets/sounds/ogg/timeout_sound.ogg" id="timeout_sound"></audio>
+
+
+  </div>
+
+
+
+
+  <script src="java.js"></script>
+</body>
+
+
+</html>
