@@ -144,6 +144,36 @@
   --font-family-bold: "Cooper Hewitt";
   --font-family-normal: "Cooper Hewitt";
   --font-family-light: "Cooper Hewitt Book";
+  --notice-bg-color: #f0dcae;
+  --notice-border-color: #b6791f;
+  --notice-text-color: #5c3a12;
+}
+
+.site-notice {
+  margin: 0;
+  padding: 0.7rem 1.4rem 0.7rem 4.6rem;
+  background: var(--notice-bg-color);
+  border-bottom: 1px solid var(--notice-border-color);
+  color: var(--notice-text-color);
+  font-family: var(--font-family-normal);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.site-notice svg {
+  flex: none;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: 0.1rem;
+  color: var(--notice-border-color);
+}
+
+.site-notice a {
+  color: var(--notice-border-color);
+  font-weight: 700;
 }
 
 #breadcrumbs {
