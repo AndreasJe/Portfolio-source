@@ -151,7 +151,8 @@
 
 .site-notice {
   margin: 0;
-  padding: 0.7rem 1.4rem 0.7rem 4.6rem;
+  padding: 0.7rem 1.4rem;
+  width: 100%;
   background: var(--notice-bg-color);
   border-bottom: 1px solid var(--notice-border-color);
   color: var(--notice-text-color);
@@ -160,6 +161,7 @@
   line-height: 1.4;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 0.55rem;
 }
 
@@ -174,6 +176,7 @@
 .site-notice a {
   color: var(--notice-border-color);
   font-weight: 700;
+  font-size: inherit;
 }
 
 #breadcrumbs {
