@@ -152,7 +152,8 @@
 .site-notice {
   margin: 0;
   padding: 0.7rem 1.4rem;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw !important;
   background: var(--notice-bg-color);
   border-bottom: 1px solid var(--notice-border-color);
   color: var(--notice-text-color);
